@@ -4,29 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIP 2024 Schedule</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            color: rgb(0, 0, 0);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .btn:hover {
+            background-color: rgba(8, 8, 8, 0.9);
+            box-shadow: 0 6px 8px rgba(5, 5, 5, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>SIP 2024 Schedule</h1>
-    </header>
-
-    <section>
-        <h2>Welcome to the Student Induction Program 2024</h2>
-        <p>Here's the schedule for this year's induction program:</p>
-        <ul>
-            <li>Day 1: Welcome and Orientation</li>
-            <li>Day 2: Department-wise Introduction and Activities</li>
-            <li>Day 3: Cultural Activities and Workshops</li>
-            <li>Day 4: Sports and Interactive Sessions</li>
-            <li>Day 5: Closing Ceremony</li>
-        </ul>
-        <button onclick="window.location.href='departments.html'">View Schedule</button>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 SIP Event, [College Name]</p>
-    </footer>
-
+    <div class="header">
+        <h1>Welcome to SIP 2024</h1>
+    </div>
+    <div class="footer">
+        <a href="COLLEGE INAGURATION\public\pdf\SIP 2024 schedule.pdf" class="btn" target="_blank">Schedule of Events</a>
+        <a href="departments.html" class="btn">Department Details</a>
+    </div>
 </body>
 </html>
