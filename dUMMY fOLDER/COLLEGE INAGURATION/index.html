@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            background-image: url('1.jpg');
+            background-image: url('1.jpg'); /* College image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -18,11 +18,18 @@
             flex-direction: column;
             justify-content: space-between;
         }
+        /* Header styling for more emphasis */
         .header {
             text-align: center;
-            padding: 20px;
-            color: rgb(0, 0, 0);
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            font-size: 3em;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5); /* Add slight background behind text */
+            border-radius: 15px;
+            margin: 20px;
+            line-height: 1.2;
         }
         .footer {
             display: flex;
@@ -31,37 +38,63 @@
             padding: 20px;
             margin-bottom: 30px;
         }
+        /* Button group for better alignment */
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 800px;
+        }
+        /* Buttons */
         .btn {
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(255, 140, 0, 0.8); /* Orange color matching the theme */
             border: none;
             color: white;
             padding: 15px 30px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 20px;
-            margin: 10px 0;
+            font-size: 18px;
             cursor: pointer;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, box-shadow 0.3s;
+            border-radius: 8px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            flex: 1 1 45%; /* Adjust size dynamically */
+            min-width: 220px;
         }
+        /* Button hover effects */
         .btn:hover {
-            background-color: rgba(8, 8, 8, 0.9);
-            box-shadow: 0 6px 8px rgba(5, 5, 5, 0.2);
+            background-color: rgba(255, 165, 0, 1); /* Lighter orange on hover */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px); /* Lift effect on hover */
+        }
+        /* Responsiveness for smaller screens */
+        @media screen and (max-width: 768px) {
+            .header {
+                font-size: 2.5em;
+                padding: 20px;
+            }
+            .btn {
+                flex: 1 1 100%;
+                min-width: unset;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Welcome to SIP 2024</h1>
+        Welcome to SIP 2024
     </div>
     <div class="footer">
-        <a href="COLLEGE INAGURATION\public\pdf\2024brochure.pdf" class="btn" target="_blank">Brochure</a>
-        <a href="COLLEGE INAGURATION\public\pdf\venue.pdf" class="btn" target="_blank">Venue Details</a>
-        <a href="COLLEGE INAGURATION\public\pdf\SIP 2024 schedule.pdf" class="btn" target="_blank">Schedule of Events</a>
-        <a href="COLLEGE INAGURATION\public\pdf\class.pdf" class="btn" target="_blank">Class at Glance</a>
-        <a href="departments.html" class="btn">Department Details</a>
+        <div class="btn-group">
+            <a href="COLLEGE INAGURATION\public\pdf\2024brochure.pdf" class="btn" target="_blank">Brochure</a>
+            <a href="COLLEGE INAGURATION\public\pdf\venue.pdf" class="btn" target="_blank">Venue Details</a>
+            <a href="COLLEGE INAGURATION\public\pdf\SIP 2024 schedule.pdf" class="btn" target="_blank">Schedule of Events</a>
+            <a href="COLLEGE INAGURATION\public\pdf\class.pdf" class="btn" target="_blank">Class at Glance</a>
+            <a href="COLLEGE INAGURATION\public\pdf\Student Induction Program Card (1).pdf" class="btn" target="_blank">Contacts at a Glance</a>
+            <a href="COLLEGE INAGURATION\public\pdf\SIP_Student Group Heads.pdf" class="btn" target="_blank">SIP Student Group Heads</a>
+            <a href="departments.html" class="btn">Department Details</a>
+        </div>
     </div>
 </body>
 </html>
