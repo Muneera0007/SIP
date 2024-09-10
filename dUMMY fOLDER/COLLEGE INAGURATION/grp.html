@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batches</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('1.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+        /* Section styling */
+        section {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+            border-radius: 15px;
+            margin: 20px auto;
+            width: 85%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        /* Grid container for buttons */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px; /* Space between buttons */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Links styled as buttons */
+        .grid-container a {
+            display: inline-block;
+            background-color: rgba(255, 87, 34, 0.9); /* Deep orange background */
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .grid-container a:hover {
+            background-color: rgba(255, 110, 50, 1); /* Lighter orange on hover */
+            transform: translateY(-3px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 0.9em;
+            border-radius: 0 0 15px 15px;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media screen and (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* One column on smaller screens */
+            }
+
+            header {
+                font-size: 2em;
+            }
+
+            section {
+                width: 90%;
+            }
+
+            .grid-container a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Batches
+    </header>
+
+    <section>
+        <h2>Please select your branch to view your schedule:</h2>
+        <div class="grid-container">
+            <a href="COLLEGE INAGURATION\public\pdf\B1.pdf" class="btn" target="_blank">B1</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B2.pdf" class="btn" target="_blank">B2</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B3.pdf" class="btn" target="_blank">B3</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B4.pdf" class="btn" target="_blank">B4</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B5.pdf" class="btn" target="_blank">B5</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B6.pdf" class="btn" target="_blank">B6</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B7.pdf" class="btn" target="_blank">B7</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B8.pdf" class="btn" target="_blank">B8</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B9.pdf" class="btn" target="_blank">B9</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B10.pdf" class="btn" target="_blank">B10</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B11.pdf" class="btn" target="_blank">B11</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B12.pdf" class="btn" target="_blank">B12</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B13.pdf" class="btn" target="_blank">B13</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B14.pdf" class="btn" target="_blank">B14</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B15.pdf" class="btn" target="_blank">B15</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B16.pdf" class="btn" target="_blank">B16</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B17.pdf" class="btn" target="_blank">B17</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B18.pdf" class="btn" target="_blank">B18</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B19.pdf" class="btn" target="_blank">B19</a>
+            <a href="COLLEGE INAGURATION\public\pdf\B20.pdf" class="btn" target="_blank">B20</a>            
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 SIP Event, TKM College Of Engineering
+    </footer>
+
+</body>
+</html>
